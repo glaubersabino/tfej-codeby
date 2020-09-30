@@ -67,6 +67,13 @@ body, input, button{
     font-size: 1.125em;
     font-weight: 600;
     color: #383838;
+    transition: background ease 0.2s;
+}
+
+.main_header a:hover{
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 .main_categories{
@@ -166,7 +173,8 @@ body, input, button{
     flex-direction: column;
     justify-content: space-between;
     background: #0088ED;
-    height: 175px;
+    height: 25vh;
+    min-width: 170px;
 }
 
 .main_growth .plans .plan + .plan{
@@ -174,23 +182,23 @@ body, input, button{
 }
 
 .main_growth .plans .plan:nth-child(2){
-    height: 225px;
+    height: 30vh;
 }
 
 .main_growth .plans .plan:nth-child(3){
-    height: 275px;
+    height: 35vh;
 }
 
 .main_growth .plans .plan:nth-child(4){
-    height: 325px;
+    height: 40vh;
 }
 
 .main_growth .plans .plan:nth-child(5){
-    height: 375px;
+    height: 45vh;
 }
 
 .main_growth .plans .plan:nth-child(6){
-    height: 425px;
+    height: 50vh;
 }
 
 
@@ -229,7 +237,7 @@ body, input, button{
     }
 
     .main_categories .categories_box .category + .category{
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .main_categories .categories_box + .categories_box {
@@ -239,9 +247,33 @@ body, input, button{
     .main_categories .categories_box .text p{
         max-width: 249px;
     }
+
+    .main_growth .plan_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
+
+    .main_growth header h1{
+        font-size: 2.75em;
+    }
+
+    .main_growth .plan_info h2{
+        font-size: 1.75em;
+        margin: 0;
+    }
+
+    .main_growth .plan_info p{
+        font-size: 0.65em !important;
+        line-height: 1;
+        margin-top: 10px;
+        padding: 0 5px 5px 5px !important;
+    }
 }
 
-@media screen and (max-width: 768px and ) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
     .main_categories .categories_box .category + .category{
         margin-left: 25px;
     }
@@ -266,6 +298,46 @@ body, input, button{
 
     .img_full{
         max-width: 945px;
+    }
+
+    .main_growth{
+        padding-top: 40px;
+    }
+
+    .main_growth .main_plans,
+    .main_growth header {
+        position: unset;
+    }
+
+    .main_growth header{
+        margin-bottom: 40px;
+    }
+
+    .main_growth .plans{
+        display: flex;
+        justify-content: stretch;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main_growth .plans .plan,
+    .main_growth .plans .plan:nth-child(2),
+    .main_growth .plans .plan:nth-child(3),
+    .main_growth .plans .plan:nth-child(4),
+    .main_growth .plans .plan:nth-child(5),
+    .main_growth .plans .plan:nth-child(6) {
+        height: unset;
+    }
+
+    .main_growth .plans .plan{
+        justify-content: stretch;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main_growth .plans .plan + .plan{
+        margin-left: 0;
+        margin-top: 30px;
     }
 }
 
