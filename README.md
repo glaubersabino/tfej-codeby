@@ -8,7 +8,7 @@
   <a href="#information_source-how-to-use">Como Executar?</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-## :rocket: Objetivo
+## :information_source: Objetivo
 
 Desenvolver o Front-End de um layout usando Flex-Box CSS e suas propriedades.
 
